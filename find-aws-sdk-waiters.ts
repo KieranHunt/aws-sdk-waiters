@@ -1,0 +1,147 @@
+#!/usr/bin/env bun
+
+import { readdirSync, statSync, readFileSync, writeFileSync } from "fs";
+import { join } from "path";
+import { z } from "zod";
+import { tempo } from "@joggr/tempo";
+
+
+const waitersFileSchema = z.object({
+  version: z.number(),
+  waiters: z.record(z.string(), z.object({
+    delay: z.number(),
+    operation: z.string(),
+    maxAttempts: z.number(),
+  })),
+});
+
+console.log("Starting AWS SDK waiter check...");
+console.log("AWS SDK repository location: ./aws-sdk-java-v2");
+
+function findWaiterFiles(dir: string, results: string[] = []): string[] {
+  try {
+    const files = readdirSync(dir);
+
+    for (const file of files) {
+      const filePath = join(dir, file);
+
+      try {
+        const stat = statSync(filePath);
+
+        if (stat.isDirectory()) {
+          findWaiterFiles(filePath, results);
+        } else if (file === "waiters-2.json") {
+          results.push(filePath);
+        }
+      } catch (err) {
+
+        continue;
+      }
+    }
+  } catch (err) {
+
+  }
+
+  return results;
+}
+
+function extractServiceName(path: string): string {
+  const parts = path.split("/");
+  const servicesIndex = parts.indexOf("services");
+
+  if (servicesIndex !== -1 && servicesIndex + 1 < parts.length) {
+    return parts[servicesIndex + 1];
+  }
+
+  return path;
+}
+
+function createGitHubLink(waiterFilePath: string): string {
+  const relativePath = waiterFilePath.replace("aws-sdk-java-v2/", "");
+  const githubBaseUrl = "https://github.com/aws/aws-sdk-java-v2/blob/master";
+  return `${githubBaseUrl}/${relativePath}`;
+}
+
+const allWaiterFiles = findWaiterFiles("./aws-sdk-java-v2");
+
+const waiterFiles = allWaiterFiles.filter(
+  (path) => !path.includes("/test/") && !path.includes("/codegen/")
+);
+
+console.log(`\nFound ${waiterFiles.length} waiters-2.json files (excluding tests)\n`);
+
+console.log("Services with waiters:");
+
+const tableData: Array<Array<string | ((text: any) => any)>> = [
+  ["Service", "Waiter", "Operation", "Delay", "Max Attempts"]
+];
+
+const waiterRows: Array<{
+  serviceName: string;
+  githubUrl: string;
+  waiterName: string;
+  operation: string;
+  delay: string;
+  maxAttempts: string;
+}> = [];
+
+for (const waiterFile of waiterFiles) {
+  const serviceName = extractServiceName(waiterFile);
+  const githubUrl = createGitHubLink(waiterFile);
+
+  try {
+    const content = readFileSync(waiterFile, "utf-8");
+    const json = JSON.parse(content);
+    const validated = waitersFileSchema.parse(json);
+
+    console.log(`\n${serviceName}:`);
+
+    for (const [waiterName, waiter] of Object.entries(validated.waiters)) {
+      console.log(`  - ${waiterName}`);
+      console.log(`    Operation: ${waiter.operation}`);
+      console.log(`    Delay: ${waiter.delay}s`);
+      console.log(`    Max Attempts: ${waiter.maxAttempts}`);
+
+      waiterRows.push({
+        serviceName,
+        githubUrl,
+        waiterName,
+        operation: waiter.operation,
+        delay: `${waiter.delay}s`,
+        maxAttempts: waiter.maxAttempts.toString(),
+      });
+    }
+  } catch (err) {
+    console.error(`\nError processing ${serviceName}:`, err);
+  }
+}
+
+waiterRows.sort((a, b) => {
+  const serviceCompare = a.serviceName.localeCompare(b.serviceName);
+  if (serviceCompare !== 0) return serviceCompare;
+  return a.waiterName.localeCompare(b.waiterName);
+});
+
+for (const row of waiterRows) {
+  tableData.push([
+    (text) => text.link(row.serviceName, row.githubUrl),
+    row.waiterName,
+    row.operation,
+    row.delay,
+    row.maxAttempts,
+  ]);
+}
+
+const readme = tempo()
+  .h1("AWS SDK Java v2 Waiters")
+  .paragraph("This repository contains a script that scans the AWS SDK for Java v2 and extracts information about all available waiters.")
+  .h2("Waiters Found")
+  .table(tableData)
+  .h2("Running the Script")
+  .codeBlock("bun run find-aws-sdk-waiters.ts", "bash")
+  .toString();
+
+writeFileSync("README.md", readme, "utf-8");
+
+console.log("\nScript completed successfully!");
+console.log(`Generated README.md with ${tableData.length - 1} waiters from ${waiterFiles.length} services`);
