@@ -27,6 +27,11 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [autoscaling](https://github.com/aws/aws-sdk-java-v2/blob/master/services/autoscaling/src/main/resources/codegen-resources/waiters-2.json) | GroupNotExists | DescribeAutoScalingGroups | 15s | 40 |
 | [b2bi](https://github.com/aws/aws-sdk-java-v2/blob/master/services/b2bi/src/main/resources/codegen-resources/waiters-2.json) | TransformerJobSucceeded | GetTransformerJob | 10s | 12 |
 | [bedrockagentcorecontrol](https://github.com/aws/aws-sdk-java-v2/blob/master/services/bedrockagentcorecontrol/src/main/resources/codegen-resources/waiters-2.json) | MemoryCreated | GetMemory | 2s | 60 |
+| [bedrockagentcorecontrol](https://github.com/aws/aws-sdk-java-v2/blob/master/services/bedrockagentcorecontrol/src/main/resources/codegen-resources/waiters-2.json) | PolicyActive | GetPolicy | 2s | 60 |
+| [bedrockagentcorecontrol](https://github.com/aws/aws-sdk-java-v2/blob/master/services/bedrockagentcorecontrol/src/main/resources/codegen-resources/waiters-2.json) | PolicyDeleted | GetPolicy | 2s | 60 |
+| [bedrockagentcorecontrol](https://github.com/aws/aws-sdk-java-v2/blob/master/services/bedrockagentcorecontrol/src/main/resources/codegen-resources/waiters-2.json) | PolicyEngineActive | GetPolicyEngine | 2s | 60 |
+| [bedrockagentcorecontrol](https://github.com/aws/aws-sdk-java-v2/blob/master/services/bedrockagentcorecontrol/src/main/resources/codegen-resources/waiters-2.json) | PolicyEngineDeleted | GetPolicyEngine | 2s | 60 |
+| [bedrockagentcorecontrol](https://github.com/aws/aws-sdk-java-v2/blob/master/services/bedrockagentcorecontrol/src/main/resources/codegen-resources/waiters-2.json) | PolicyGenerationCompleted | GetPolicyGeneration | 2s | 60 |
 | [cloudcontrol](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudcontrol/src/main/resources/codegen-resources/waiters-2.json) | ResourceRequestSuccess | GetResourceRequestStatus | 5s | 24 |
 | [cloudformation](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudformation/src/main/resources/codegen-resources/waiters-2.json) | ChangeSetCreateComplete | DescribeChangeSet | 30s | 120 |
 | [cloudformation](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudformation/src/main/resources/codegen-resources/waiters-2.json) | StackCreateComplete | DescribeStacks | 30s | 120 |
