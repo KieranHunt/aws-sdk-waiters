@@ -143,7 +143,6 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [elasticloadbalancingv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/elasticloadbalancingv2/src/main/resources/codegen-resources/waiters-2.json) | LoadBalancersDeleted | DescribeLoadBalancers | 15s | 40 |
 | [elasticloadbalancingv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/elasticloadbalancingv2/src/main/resources/codegen-resources/waiters-2.json) | TargetDeregistered | DescribeTargetHealth | 15s | 40 |
 | [elasticloadbalancingv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/elasticloadbalancingv2/src/main/resources/codegen-resources/waiters-2.json) | TargetInService | DescribeTargetHealth | 15s | 40 |
-| [elastictranscoder](https://github.com/aws/aws-sdk-java-v2/blob/master/services/elastictranscoder/src/main/resources/codegen-resources/waiters-2.json) | JobComplete | ReadJob | 30s | 120 |
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | ClusterRunning | DescribeCluster | 30s | 60 |
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | ClusterTerminated | DescribeCluster | 30s | 60 |
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | StepComplete | DescribeStep | 30s | 60 |
