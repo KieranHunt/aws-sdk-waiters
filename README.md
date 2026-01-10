@@ -321,5 +321,12 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [ssm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ssm/src/main/resources/codegen-resources/waiters-2.json) | CommandExecuted | GetCommandInvocation | 5s | 20 |
 | [ssmincidents](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ssmincidents/src/main/resources/codegen-resources/waiters-2.json) | WaitForReplicationSetActive | GetReplicationSet | 30s | 5 |
 | [ssmincidents](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ssmincidents/src/main/resources/codegen-resources/waiters-2.json) | WaitForReplicationSetDeleted | GetReplicationSet | 30s | 5 |
+| [transcribe](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transcribe/src/main/resources/codegen-resources/waiters-2.json) | CallAnalyticsJobCompleted | GetCallAnalyticsJob | 10s | 180 |
+| [transcribe](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transcribe/src/main/resources/codegen-resources/waiters-2.json) | LanguageModelCompleted | DescribeLanguageModel | 120s | 180 |
+| [transcribe](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transcribe/src/main/resources/codegen-resources/waiters-2.json) | MedicalScribeJobCompleted | GetMedicalScribeJob | 10s | 180 |
+| [transcribe](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transcribe/src/main/resources/codegen-resources/waiters-2.json) | MedicalTranscriptionJobCompleted | GetMedicalTranscriptionJob | 10s | 180 |
+| [transcribe](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transcribe/src/main/resources/codegen-resources/waiters-2.json) | MedicalVocabularyReady | GetMedicalVocabulary | 10s | 180 |
+| [transcribe](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transcribe/src/main/resources/codegen-resources/waiters-2.json) | TranscriptionJobCompleted | GetTranscriptionJob | 10s | 180 |
+| [transcribe](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transcribe/src/main/resources/codegen-resources/waiters-2.json) | VocabularyReady | GetVocabulary | 10s | 180 |
 | [transfer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transfer/src/main/resources/codegen-resources/waiters-2.json) | ServerOffline | DescribeServer | 30s | 120 |
 | [transfer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transfer/src/main/resources/codegen-resources/waiters-2.json) | ServerOnline | DescribeServer | 30s | 120 |
