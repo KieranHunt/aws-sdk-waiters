@@ -61,7 +61,9 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [databasemigration](https://github.com/aws/aws-sdk-java-v2/blob/master/services/databasemigration/src/main/resources/codegen-resources/waiters-2.json) | ReplicationTaskStopped | DescribeReplicationTasks | 15s | 60 |
 | [databasemigration](https://github.com/aws/aws-sdk-java-v2/blob/master/services/databasemigration/src/main/resources/codegen-resources/waiters-2.json) | TestConnectionSucceeds | DescribeConnections | 5s | 60 |
 | [deadline](https://github.com/aws/aws-sdk-java-v2/blob/master/services/deadline/src/main/resources/codegen-resources/waiters-2.json) | FleetActive | GetFleet | 5s | 180 |
+| [deadline](https://github.com/aws/aws-sdk-java-v2/blob/master/services/deadline/src/main/resources/codegen-resources/waiters-2.json) | JobComplete | GetJob | 15s | 240 |
 | [deadline](https://github.com/aws/aws-sdk-java-v2/blob/master/services/deadline/src/main/resources/codegen-resources/waiters-2.json) | JobCreateComplete | GetJob | 1s | 120 |
+| [deadline](https://github.com/aws/aws-sdk-java-v2/blob/master/services/deadline/src/main/resources/codegen-resources/waiters-2.json) | JobSucceeded | GetJob | 15s | 240 |
 | [deadline](https://github.com/aws/aws-sdk-java-v2/blob/master/services/deadline/src/main/resources/codegen-resources/waiters-2.json) | LicenseEndpointDeleted | GetLicenseEndpoint | 10s | 234 |
 | [deadline](https://github.com/aws/aws-sdk-java-v2/blob/master/services/deadline/src/main/resources/codegen-resources/waiters-2.json) | LicenseEndpointValid | GetLicenseEndpoint | 10s | 114 |
 | [deadline](https://github.com/aws/aws-sdk-java-v2/blob/master/services/deadline/src/main/resources/codegen-resources/waiters-2.json) | QueueFleetAssociationStopped | GetQueueFleetAssociation | 10s | 60 |
