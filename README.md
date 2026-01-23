@@ -75,6 +75,10 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [docdb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/docdb/src/main/resources/codegen-resources/waiters-2.json) | DBInstanceDeleted | DescribeDBInstances | 30s | 60 |
 | [dsql](https://github.com/aws/aws-sdk-java-v2/blob/master/services/dsql/src/main/resources/codegen-resources/waiters-2.json) | ClusterActive | GetCluster | 2s | 60 |
 | [dsql](https://github.com/aws/aws-sdk-java-v2/blob/master/services/dsql/src/main/resources/codegen-resources/waiters-2.json) | ClusterNotExists | GetCluster | 2s | 60 |
+| [dynamodb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/dynamodb/src/main/resources/codegen-resources/dynamodb/waiters-2.json) | ContributorInsightsEnabled | DescribeContributorInsights | 20s | 30 |
+| [dynamodb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/dynamodb/src/main/resources/codegen-resources/dynamodb/waiters-2.json) | ExportCompleted | DescribeExport | 20s | 60 |
+| [dynamodb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/dynamodb/src/main/resources/codegen-resources/dynamodb/waiters-2.json) | ImportCompleted | DescribeImport | 20s | 60 |
+| [dynamodb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/dynamodb/src/main/resources/codegen-resources/dynamodb/waiters-2.json) | KinesisStreamingDestinationActive | DescribeKinesisStreamingDestination | 20s | 30 |
 | [dynamodb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/dynamodb/src/main/resources/codegen-resources/dynamodb/waiters-2.json) | TableExists | DescribeTable | 20s | 25 |
 | [dynamodb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/dynamodb/src/main/resources/codegen-resources/dynamodb/waiters-2.json) | TableNotExists | DescribeTable | 20s | 25 |
 | [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | BundleTaskComplete | DescribeBundleTasks | 15s | 40 |
