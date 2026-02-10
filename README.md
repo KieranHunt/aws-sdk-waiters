@@ -102,6 +102,10 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | NatGatewayDeleted | DescribeNatGateways | 15s | 40 |
 | [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | NetworkInterfaceAvailable | DescribeNetworkInterfaces | 20s | 10 |
 | [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | PasswordDataAvailable | GetPasswordData | 15s | 40 |
+| [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | SecondaryNetworkCreateComplete | DescribeSecondaryNetworks | 10s | 30 |
+| [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | SecondaryNetworkDeleteComplete | DescribeSecondaryNetworks | 10s | 30 |
+| [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | SecondarySubnetCreateComplete | DescribeSecondarySubnets | 10s | 30 |
+| [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | SecondarySubnetDeleteComplete | DescribeSecondarySubnets | 10s | 30 |
 | [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | SecurityGroupExists | DescribeSecurityGroups | 5s | 6 |
 | [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | SecurityGroupVpcAssociationAssociated | DescribeSecurityGroupVpcAssociations | 10s | 7 |
 | [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | SecurityGroupVpcAssociationDisassociated | DescribeSecurityGroupVpcAssociations | 10s | 7 |
