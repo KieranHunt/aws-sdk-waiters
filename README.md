@@ -48,6 +48,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [cloudfront](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudfront/src/main/resources/codegen-resources/waiters-2.json) | InvalidationForDistributionTenantCompleted | GetInvalidationForDistributionTenant | 20s | 30 |
 | [cloudfront](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudfront/src/main/resources/codegen-resources/waiters-2.json) | StreamingDistributionDeployed | GetStreamingDistribution | 60s | 25 |
 | [cloudwatch](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudwatch/src/main/resources/codegen-resources/waiters-2.json) | AlarmExists | DescribeAlarms | 5s | 40 |
+| [cloudwatch](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudwatch/src/main/resources/codegen-resources/waiters-2.json) | AlarmMuteRuleExists | GetAlarmMuteRule | 5s | 40 |
 | [cloudwatch](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudwatch/src/main/resources/codegen-resources/waiters-2.json) | CompositeAlarmExists | DescribeAlarms | 5s | 40 |
 | [codedeploy](https://github.com/aws/aws-sdk-java-v2/blob/master/services/codedeploy/src/main/resources/codegen-resources/waiters-2.json) | DeploymentSuccessful | GetDeployment | 15s | 120 |
 | [codegurureviewer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/codegurureviewer/src/main/resources/codegen-resources/waiters-2.json) | CodeReviewCompleted | DescribeCodeReview | 10s | 180 |
@@ -153,6 +154,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [elasticloadbalancingv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/elasticloadbalancingv2/src/main/resources/codegen-resources/waiters-2.json) | LoadBalancersDeleted | DescribeLoadBalancers | 15s | 40 |
 | [elasticloadbalancingv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/elasticloadbalancingv2/src/main/resources/codegen-resources/waiters-2.json) | TargetDeregistered | DescribeTargetHealth | 15s | 40 |
 | [elasticloadbalancingv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/elasticloadbalancingv2/src/main/resources/codegen-resources/waiters-2.json) | TargetInService | DescribeTargetHealth | 15s | 40 |
+| [elementalinference](https://github.com/aws/aws-sdk-java-v2/blob/master/services/elementalinference/src/main/resources/codegen-resources/waiters-2.json) | FeedDeleted | GetFeed | 3s | 40 |
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | ClusterRunning | DescribeCluster | 30s | 60 |
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | ClusterTerminated | DescribeCluster | 30s | 60 |
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | StepComplete | DescribeStep | 30s | 60 |
