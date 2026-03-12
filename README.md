@@ -331,6 +331,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [schemas](https://github.com/aws/aws-sdk-java-v2/blob/master/services/schemas/src/main/resources/codegen-resources/waiters-2.json) | CodeBindingExists | DescribeCodeBinding | 2s | 30 |
 | [ses](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ses/src/main/resources/codegen-resources/waiters-2.json) | IdentityExists | GetIdentityVerificationAttributes | 3s | 20 |
 | [signer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/signer/src/main/resources/codegen-resources/waiters-2.json) | SuccessfulSigningJob | DescribeSigningJob | 20s | 25 |
+| [simpledbv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/simpledbv2/src/main/resources/codegen-resources/waiters-2.json) | ExportSucceeded | GetExport | 30s | 5 |
 | [ssm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ssm/src/main/resources/codegen-resources/waiters-2.json) | CommandExecuted | GetCommandInvocation | 5s | 20 |
 | [ssmincidents](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ssmincidents/src/main/resources/codegen-resources/waiters-2.json) | WaitForReplicationSetActive | GetReplicationSet | 30s | 5 |
 | [ssmincidents](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ssmincidents/src/main/resources/codegen-resources/waiters-2.json) | WaitForReplicationSetDeleted | GetReplicationSet | 30s | 5 |
