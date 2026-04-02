@@ -127,6 +127,11 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [ec2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ec2/src/main/resources/codegen-resources/waiters-2.json) | VpnConnectionDeleted | DescribeVpnConnections | 15s | 40 |
 | [ecr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecr/src/main/resources/codegen-resources/waiters-2.json) | ImageScanComplete | DescribeImageScanFindings | 5s | 60 |
 | [ecr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecr/src/main/resources/codegen-resources/waiters-2.json) | LifecyclePolicyPreviewComplete | GetLifecyclePolicyPreview | 5s | 20 |
+| [ecs](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecs/src/main/resources/codegen-resources/waiters-2.json) | DaemonActive | DescribeDaemon | 15s | 8 |
+| [ecs](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecs/src/main/resources/codegen-resources/waiters-2.json) | DaemonDeploymentStopped | DescribeDaemonDeployments | 15s | 8 |
+| [ecs](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecs/src/main/resources/codegen-resources/waiters-2.json) | DaemonDeploymentSuccessful | DescribeDaemonDeployments | 15s | 8 |
+| [ecs](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecs/src/main/resources/codegen-resources/waiters-2.json) | DaemonTaskDefinitionActive | DescribeDaemonTaskDefinition | 15s | 8 |
+| [ecs](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecs/src/main/resources/codegen-resources/waiters-2.json) | DaemonTaskDefinitionDeleted | DescribeDaemonTaskDefinition | 15s | 8 |
 | [ecs](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecs/src/main/resources/codegen-resources/waiters-2.json) | ServicesInactive | DescribeServices | 15s | 40 |
 | [ecs](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecs/src/main/resources/codegen-resources/waiters-2.json) | ServicesStable | DescribeServices | 15s | 40 |
 | [ecs](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecs/src/main/resources/codegen-resources/waiters-2.json) | TasksRunning | DescribeTasks | 6s | 100 |
