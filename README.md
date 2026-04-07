@@ -6,6 +6,8 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 
 | Service | Waiter | Operation | Delay | Max Attempts |
 | ------- | ------ | --------- | ----- | ------------ |
+| [accessanalyzer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/accessanalyzer/src/main/resources/codegen-resources/waiters-2.json) | PolicyPreviewConfigurationActive | GetPolicyPreviewConfiguration | 5s | 24 |
+| [accessanalyzer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/accessanalyzer/src/main/resources/codegen-resources/waiters-2.json) | PolicyPreviewJobCompleted | GetPolicyPreviewJob | 30s | 5 |
 | [acm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acm/src/main/resources/codegen-resources/waiters-2.json) | CertificateValidated | DescribeCertificate | 60s | 5 |
 | [acmpca](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acmpca/src/main/resources/codegen-resources/waiters-2.json) | AuditReportCreated | DescribeCertificateAuthorityAuditReport | 3s | 60 |
 | [acmpca](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acmpca/src/main/resources/codegen-resources/waiters-2.json) | CertificateAuthorityCSRCreated | GetCertificateAuthorityCsr | 3s | 60 |
