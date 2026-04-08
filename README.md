@@ -6,8 +6,6 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 
 | Service | Waiter | Operation | Delay | Max Attempts |
 | ------- | ------ | --------- | ----- | ------------ |
-| [accessanalyzer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/accessanalyzer/src/main/resources/codegen-resources/waiters-2.json) | PolicyPreviewConfigurationActive | GetPolicyPreviewConfiguration | 5s | 24 |
-| [accessanalyzer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/accessanalyzer/src/main/resources/codegen-resources/waiters-2.json) | PolicyPreviewJobCompleted | GetPolicyPreviewJob | 30s | 5 |
 | [acm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acm/src/main/resources/codegen-resources/waiters-2.json) | CertificateValidated | DescribeCertificate | 60s | 5 |
 | [acmpca](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acmpca/src/main/resources/codegen-resources/waiters-2.json) | AuditReportCreated | DescribeCertificateAuthorityAuditReport | 3s | 60 |
 | [acmpca](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acmpca/src/main/resources/codegen-resources/waiters-2.json) | CertificateAuthorityCSRCreated | GetCertificateAuthorityCsr | 3s | 60 |
@@ -311,9 +309,12 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [route53recoverycontrolconfig](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53recoverycontrolconfig/src/main/resources/codegen-resources/waiters-2.json) | RoutingControlCreated | DescribeRoutingControl | 5s | 26 |
 | [route53recoverycontrolconfig](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53recoverycontrolconfig/src/main/resources/codegen-resources/waiters-2.json) | RoutingControlDeleted | DescribeRoutingControl | 5s | 26 |
 | [rtbfabric](https://github.com/aws/aws-sdk-java-v2/blob/master/services/rtbfabric/src/main/resources/codegen-resources/waiters-2.json) | InboundExternalLinkActive | GetInboundExternalLink | 30s | 5 |
+| [rtbfabric](https://github.com/aws/aws-sdk-java-v2/blob/master/services/rtbfabric/src/main/resources/codegen-resources/waiters-2.json) | InboundExternalLinkDeleted | GetInboundExternalLink | 30s | 5 |
 | [rtbfabric](https://github.com/aws/aws-sdk-java-v2/blob/master/services/rtbfabric/src/main/resources/codegen-resources/waiters-2.json) | LinkAccepted | GetLink | 30s | 5 |
 | [rtbfabric](https://github.com/aws/aws-sdk-java-v2/blob/master/services/rtbfabric/src/main/resources/codegen-resources/waiters-2.json) | LinkActive | GetLink | 30s | 5 |
+| [rtbfabric](https://github.com/aws/aws-sdk-java-v2/blob/master/services/rtbfabric/src/main/resources/codegen-resources/waiters-2.json) | LinkDeleted | GetLink | 30s | 5 |
 | [rtbfabric](https://github.com/aws/aws-sdk-java-v2/blob/master/services/rtbfabric/src/main/resources/codegen-resources/waiters-2.json) | OutboundExternalLinkActive | GetOutboundExternalLink | 30s | 5 |
+| [rtbfabric](https://github.com/aws/aws-sdk-java-v2/blob/master/services/rtbfabric/src/main/resources/codegen-resources/waiters-2.json) | OutboundExternalLinkDeleted | GetOutboundExternalLink | 30s | 5 |
 | [rtbfabric](https://github.com/aws/aws-sdk-java-v2/blob/master/services/rtbfabric/src/main/resources/codegen-resources/waiters-2.json) | RequesterGatewayActive | GetRequesterGateway | 30s | 5 |
 | [rtbfabric](https://github.com/aws/aws-sdk-java-v2/blob/master/services/rtbfabric/src/main/resources/codegen-resources/waiters-2.json) | RequesterGatewayDeleted | GetRequesterGateway | 30s | 5 |
 | [rtbfabric](https://github.com/aws/aws-sdk-java-v2/blob/master/services/rtbfabric/src/main/resources/codegen-resources/waiters-2.json) | ResponderGatewayActive | GetResponderGateway | 30s | 5 |
