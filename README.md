@@ -179,6 +179,8 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [iam](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iam/src/main/resources/codegen-resources/waiters-2.json) | PolicyExists | GetPolicy | 1s | 20 |
 | [iam](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iam/src/main/resources/codegen-resources/waiters-2.json) | RoleExists | GetRole | 1s | 20 |
 | [iam](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iam/src/main/resources/codegen-resources/waiters-2.json) | UserExists | GetUser | 1s | 20 |
+| [interconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/interconnect/src/main/resources/codegen-resources/waiters-2.json) | ConnectionAvailable | GetConnection | 30s | 5 |
+| [interconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/interconnect/src/main/resources/codegen-resources/waiters-2.json) | ConnectionDeleted | GetConnection | 30s | 5 |
 | [iotsitewise](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iotsitewise/src/main/resources/codegen-resources/waiters-2.json) | AssetActive | DescribeAsset | 3s | 20 |
 | [iotsitewise](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iotsitewise/src/main/resources/codegen-resources/waiters-2.json) | AssetModelActive | DescribeAssetModel | 3s | 20 |
 | [iotsitewise](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iotsitewise/src/main/resources/codegen-resources/waiters-2.json) | AssetModelNotExists | DescribeAssetModel | 3s | 20 |
