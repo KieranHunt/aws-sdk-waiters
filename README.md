@@ -171,6 +171,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [glacier](https://github.com/aws/aws-sdk-java-v2/blob/master/services/glacier/src/main/resources/codegen-resources/waiters-2.json) | VaultExists | DescribeVault | 3s | 15 |
 | [glacier](https://github.com/aws/aws-sdk-java-v2/blob/master/services/glacier/src/main/resources/codegen-resources/waiters-2.json) | VaultNotExists | DescribeVault | 3s | 15 |
 | [groundstation](https://github.com/aws/aws-sdk-java-v2/blob/master/services/groundstation/src/main/resources/codegen-resources/waiters-2.json) | ContactScheduled | DescribeContact | 5s | 180 |
+| [groundstation](https://github.com/aws/aws-sdk-java-v2/blob/master/services/groundstation/src/main/resources/codegen-resources/waiters-2.json) | ContactUpdated | DescribeContactVersion | 5s | 180 |
 | [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRDatastoreActive | DescribeFHIRDatastore | 60s | 360 |
 | [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRDatastoreDeleted | DescribeFHIRDatastore | 120s | 360 |
 | [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRExportJobCompleted | DescribeFHIRExportJob | 120s | 360 |
