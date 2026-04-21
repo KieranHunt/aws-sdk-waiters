@@ -204,6 +204,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [lexmodelsv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lexmodelsv2/src/main/resources/codegen-resources/waiters-2.json) | BotLocaleCreated | DescribeBotLocale | 10s | 35 |
 | [lexmodelsv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lexmodelsv2/src/main/resources/codegen-resources/waiters-2.json) | BotLocaleExpressTestingAvailable | DescribeBotLocale | 10s | 35 |
 | [lexmodelsv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lexmodelsv2/src/main/resources/codegen-resources/waiters-2.json) | BotVersionAvailable | DescribeBotVersion | 10s | 35 |
+| [location](https://github.com/aws/aws-sdk-java-v2/blob/master/services/location/src/main/resources/codegen-resources/waiters-2.json) | JobCompleted | GetJob | 60s | 5 |
 | [machinelearning](https://github.com/aws/aws-sdk-java-v2/blob/master/services/machinelearning/src/main/resources/codegen-resources/waiters-2.json) | BatchPredictionAvailable | DescribeBatchPredictions | 30s | 60 |
 | [machinelearning](https://github.com/aws/aws-sdk-java-v2/blob/master/services/machinelearning/src/main/resources/codegen-resources/waiters-2.json) | DataSourceAvailable | DescribeDataSources | 30s | 60 |
 | [machinelearning](https://github.com/aws/aws-sdk-java-v2/blob/master/services/machinelearning/src/main/resources/codegen-resources/waiters-2.json) | EvaluationAvailable | DescribeEvaluations | 30s | 60 |
