@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "@joggr/tempo": "^0.13.4",
-    "zod": "^4.3.6"
+    "zod": "^4.4.3"
   }
 }
