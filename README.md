@@ -316,6 +316,10 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [repostspace](https://github.com/aws/aws-sdk-java-v2/blob/master/services/repostspace/src/main/resources/codegen-resources/waiters-2.json) | ChannelDeleted | GetChannel | 2s | 60 |
 | [repostspace](https://github.com/aws/aws-sdk-java-v2/blob/master/services/repostspace/src/main/resources/codegen-resources/waiters-2.json) | SpaceCreated | GetSpace | 300s | 24 |
 | [repostspace](https://github.com/aws/aws-sdk-java-v2/blob/master/services/repostspace/src/main/resources/codegen-resources/waiters-2.json) | SpaceDeleted | GetSpace | 300s | 24 |
+| [resiliencehubv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/resiliencehubv2/src/main/resources/codegen-resources/waiters-2.json) | FailureModeAssessmentSuccess | ListFailureModeAssessments | 30s | 5 |
+| [resiliencehubv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/resiliencehubv2/src/main/resources/codegen-resources/waiters-2.json) | ReportSucceeded | ListReports | 30s | 5 |
+| [resiliencehubv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/resiliencehubv2/src/main/resources/codegen-resources/waiters-2.json) | ServiceAssessmentCompleted | GetService | 30s | 5 |
+| [resiliencehubv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/resiliencehubv2/src/main/resources/codegen-resources/waiters-2.json) | ServiceResourceDiscoveryCompleted | GetService | 30s | 5 |
 | [route53](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53/src/main/resources/codegen-resources/waiters-2.json) | ResourceRecordSetsChanged | GetChange | 30s | 60 |
 | [route53recoverycontrolconfig](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53recoverycontrolconfig/src/main/resources/codegen-resources/waiters-2.json) | ClusterCreated | DescribeCluster | 5s | 26 |
 | [route53recoverycontrolconfig](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53recoverycontrolconfig/src/main/resources/codegen-resources/waiters-2.json) | ClusterDeleted | DescribeCluster | 5s | 26 |
