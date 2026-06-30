@@ -50,6 +50,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [cloudwatch](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudwatch/src/main/resources/codegen-resources/waiters-2.json) | AlarmExists | DescribeAlarms | 5s | 40 |
 | [cloudwatch](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudwatch/src/main/resources/codegen-resources/waiters-2.json) | AlarmMuteRuleExists | GetAlarmMuteRule | 5s | 40 |
 | [cloudwatch](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudwatch/src/main/resources/codegen-resources/waiters-2.json) | CompositeAlarmExists | DescribeAlarms | 5s | 40 |
+| [cloudwatch](https://github.com/aws/aws-sdk-java-v2/blob/master/services/cloudwatch/src/main/resources/codegen-resources/waiters-2.json) | LogAlarmExists | DescribeAlarms | 5s | 40 |
 | [codedeploy](https://github.com/aws/aws-sdk-java-v2/blob/master/services/codedeploy/src/main/resources/codegen-resources/waiters-2.json) | DeploymentSuccessful | GetDeployment | 15s | 120 |
 | [codegurureviewer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/codegurureviewer/src/main/resources/codegen-resources/waiters-2.json) | CodeReviewCompleted | DescribeCodeReview | 10s | 180 |
 | [codegurureviewer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/codegurureviewer/src/main/resources/codegen-resources/waiters-2.json) | RepositoryAssociationSucceeded | DescribeRepositoryAssociation | 10s | 30 |
