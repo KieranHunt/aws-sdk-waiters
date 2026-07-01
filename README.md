@@ -6,6 +6,10 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 
 | Service | Waiter | Operation | Delay | Max Attempts |
 | ------- | ------ | --------- | ----- | ------------ |
+| [acm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acm/src/main/resources/codegen-resources/waiters-2.json) | AcmeDomainValidationDeleted | DescribeAcmeDomainValidation | 5s | 60 |
+| [acm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acm/src/main/resources/codegen-resources/waiters-2.json) | AcmeDomainValidationValidated | DescribeAcmeDomainValidation | 5s | 60 |
+| [acm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acm/src/main/resources/codegen-resources/waiters-2.json) | AcmeEndpointActive | DescribeAcmeEndpoint | 5s | 60 |
+| [acm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acm/src/main/resources/codegen-resources/waiters-2.json) | AcmeEndpointDeleted | DescribeAcmeEndpoint | 5s | 60 |
 | [acm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acm/src/main/resources/codegen-resources/waiters-2.json) | CertificateValidated | DescribeCertificate | 60s | 5 |
 | [acmpca](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acmpca/src/main/resources/codegen-resources/waiters-2.json) | AuditReportCreated | DescribeCertificateAuthorityAuditReport | 3s | 60 |
 | [acmpca](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acmpca/src/main/resources/codegen-resources/waiters-2.json) | CertificateAuthorityCSRCreated | GetCertificateAuthorityCsr | 3s | 60 |
