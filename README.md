@@ -188,10 +188,11 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [glacier](https://github.com/aws/aws-sdk-java-v2/blob/master/services/glacier/src/main/resources/codegen-resources/waiters-2.json) | VaultNotExists | DescribeVault | 3s | 15 |
 | [groundstation](https://github.com/aws/aws-sdk-java-v2/blob/master/services/groundstation/src/main/resources/codegen-resources/waiters-2.json) | ContactScheduled | DescribeContact | 5s | 180 |
 | [groundstation](https://github.com/aws/aws-sdk-java-v2/blob/master/services/groundstation/src/main/resources/codegen-resources/waiters-2.json) | ContactUpdated | DescribeContactVersion | 5s | 180 |
-| [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRDatastoreActive | DescribeFHIRDatastore | 60s | 360 |
-| [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRDatastoreDeleted | DescribeFHIRDatastore | 120s | 360 |
-| [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRExportJobCompleted | DescribeFHIRExportJob | 120s | 360 |
-| [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRImportJobCompleted | DescribeFHIRImportJob | 120s | 720 |
+| [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | DataTransformationJobCompleted | DescribeDataTransformationJob | 30s | 5 |
+| [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRDatastoreActive | DescribeFHIRDatastore | 60s | 5 |
+| [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRDatastoreDeleted | DescribeFHIRDatastore | 120s | 5 |
+| [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRExportJobCompleted | DescribeFHIRExportJob | 120s | 5 |
+| [healthlake](https://github.com/aws/aws-sdk-java-v2/blob/master/services/healthlake/src/main/resources/codegen-resources/waiters-2.json) | FHIRImportJobCompleted | DescribeFHIRImportJob | 120s | 5 |
 | [iam](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iam/src/main/resources/codegen-resources/waiters-2.json) | InstanceProfileExists | GetInstanceProfile | 1s | 40 |
 | [iam](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iam/src/main/resources/codegen-resources/waiters-2.json) | PolicyExists | GetPolicy | 1s | 20 |
 | [iam](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iam/src/main/resources/codegen-resources/waiters-2.json) | RoleExists | GetRole | 1s | 20 |
