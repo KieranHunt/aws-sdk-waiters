@@ -14,6 +14,8 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [acmpca](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acmpca/src/main/resources/codegen-resources/waiters-2.json) | AuditReportCreated | DescribeCertificateAuthorityAuditReport | 3s | 60 |
 | [acmpca](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acmpca/src/main/resources/codegen-resources/waiters-2.json) | CertificateAuthorityCSRCreated | GetCertificateAuthorityCsr | 3s | 60 |
 | [acmpca](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acmpca/src/main/resources/codegen-resources/waiters-2.json) | CertificateIssued | GetCertificate | 1s | 60 |
+| [agentregistrycontrol](https://github.com/aws/aws-sdk-java-v2/blob/master/services/agentregistrycontrol/src/main/resources/codegen-resources/waiters-2.json) | RegistryReady | GetRegistry | 30s | 5 |
+| [agentregistrycontrol](https://github.com/aws/aws-sdk-java-v2/blob/master/services/agentregistrycontrol/src/main/resources/codegen-resources/waiters-2.json) | RegistryRecordApproved | GetRegistryRecord | 30s | 5 |
 | [amp](https://github.com/aws/aws-sdk-java-v2/blob/master/services/amp/src/main/resources/codegen-resources/waiters-2.json) | AnomalyDetectorActive | DescribeAnomalyDetector | 2s | 60 |
 | [amp](https://github.com/aws/aws-sdk-java-v2/blob/master/services/amp/src/main/resources/codegen-resources/waiters-2.json) | AnomalyDetectorDeleted | DescribeAnomalyDetector | 2s | 60 |
 | [amp](https://github.com/aws/aws-sdk-java-v2/blob/master/services/amp/src/main/resources/codegen-resources/waiters-2.json) | ScraperActive | DescribeScraper | 2s | 60 |
