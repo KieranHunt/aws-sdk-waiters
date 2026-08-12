@@ -6,6 +6,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 
 | Service | Waiter | Operation | Delay | Max Attempts |
 | ------- | ------ | --------- | ----- | ------------ |
+| [accountaccess](https://github.com/aws/aws-sdk-java-v2/blob/master/services/accountaccess/src/main/resources/codegen-resources/waiters-2.json) | ApplicationActive | GetApplication | 5s | 24 |
 | [acm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acm/src/main/resources/codegen-resources/waiters-2.json) | AcmeDomainValidationDeleted | DescribeAcmeDomainValidation | 5s | 60 |
 | [acm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acm/src/main/resources/codegen-resources/waiters-2.json) | AcmeDomainValidationValidated | DescribeAcmeDomainValidation | 5s | 60 |
 | [acm](https://github.com/aws/aws-sdk-java-v2/blob/master/services/acm/src/main/resources/codegen-resources/waiters-2.json) | AcmeEndpointActive | DescribeAcmeEndpoint | 5s | 60 |
