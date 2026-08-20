@@ -157,6 +157,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [ecs](https://github.com/aws/aws-sdk-java-v2/blob/master/services/ecs/src/main/resources/codegen-resources/waiters-2.json) | TasksStopped | DescribeTasks | 6s | 100 |
 | [eks](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eks/src/main/resources/codegen-resources/waiters-2.json) | AddonActive | DescribeAddon | 10s | 60 |
 | [eks](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eks/src/main/resources/codegen-resources/waiters-2.json) | AddonDeleted | DescribeAddon | 10s | 60 |
+| [eks](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eks/src/main/resources/codegen-resources/waiters-2.json) | CertificateAuthorityUpdateComplete | DescribeUpdate | 30s | 40 |
 | [eks](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eks/src/main/resources/codegen-resources/waiters-2.json) | ClusterActive | DescribeCluster | 30s | 40 |
 | [eks](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eks/src/main/resources/codegen-resources/waiters-2.json) | ClusterDeleted | DescribeCluster | 30s | 40 |
 | [eks](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eks/src/main/resources/codegen-resources/waiters-2.json) | FargateProfileActive | DescribeFargateProfile | 10s | 60 |
