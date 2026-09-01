@@ -212,6 +212,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [iotsitewise](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iotsitewise/src/main/resources/codegen-resources/waiters-2.json) | AssetNotExists | DescribeAsset | 3s | 20 |
 | [iotsitewise](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iotsitewise/src/main/resources/codegen-resources/waiters-2.json) | PortalActive | DescribePortal | 3s | 20 |
 | [iotsitewise](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iotsitewise/src/main/resources/codegen-resources/waiters-2.json) | PortalNotExists | DescribePortal | 3s | 20 |
+| [kinesis](https://github.com/aws/aws-sdk-java-v2/blob/master/services/kinesis/src/main/resources/codegen-resources/waiters-2.json) | ChannelActive | DescribeChannel | 10s | 18 |
 | [kinesis](https://github.com/aws/aws-sdk-java-v2/blob/master/services/kinesis/src/main/resources/codegen-resources/waiters-2.json) | StreamExists | DescribeStream | 10s | 18 |
 | [kinesis](https://github.com/aws/aws-sdk-java-v2/blob/master/services/kinesis/src/main/resources/codegen-resources/waiters-2.json) | StreamNotExists | DescribeStream | 10s | 18 |
 | [lambda](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambda/src/main/resources/codegen-resources/waiters-2.json) | FunctionActive | GetFunctionConfiguration | 5s | 60 |
