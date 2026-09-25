@@ -183,6 +183,8 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | ClusterRunning | DescribeCluster | 30s | 60 |
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | ClusterTerminated | DescribeCluster | 30s | 60 |
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | StepComplete | DescribeStep | 30s | 60 |
+| [eventbridgev2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eventbridgev2/src/main/resources/codegen-resources/waiters-2.json) | EventBusActive | DescribeEventBus | 2s | 60 |
+| [eventbridgev2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eventbridgev2/src/main/resources/codegen-resources/waiters-2.json) | EventBusDeleted | DescribeEventBus | 2s | 60 |
 | [gameliftstreams](https://github.com/aws/aws-sdk-java-v2/blob/master/services/gameliftstreams/src/main/resources/codegen-resources/waiters-2.json) | ApplicationDeleted | GetApplication | 2s | 60 |
 | [gameliftstreams](https://github.com/aws/aws-sdk-java-v2/blob/master/services/gameliftstreams/src/main/resources/codegen-resources/waiters-2.json) | ApplicationReady | GetApplication | 2s | 60 |
 | [gameliftstreams](https://github.com/aws/aws-sdk-java-v2/blob/master/services/gameliftstreams/src/main/resources/codegen-resources/waiters-2.json) | StreamGroupActive | GetStreamGroup | 30s | 120 |
