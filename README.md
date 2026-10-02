@@ -183,6 +183,8 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | ClusterRunning | DescribeCluster | 30s | 60 |
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | ClusterTerminated | DescribeCluster | 30s | 60 |
 | [emr](https://github.com/aws/aws-sdk-java-v2/blob/master/services/emr/src/main/resources/codegen-resources/waiters-2.json) | StepComplete | DescribeStep | 30s | 60 |
+| [endusermessaging](https://github.com/aws/aws-sdk-java-v2/blob/master/services/endusermessaging/src/main/resources/codegen-resources/waiters-2.json) | BrandProfileActive | GetBrandProfile | 30s | 5 |
+| [endusermessaging](https://github.com/aws/aws-sdk-java-v2/blob/master/services/endusermessaging/src/main/resources/codegen-resources/waiters-2.json) | JobSuccess | GetJob | 30s | 5 |
 | [eventbridgev2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eventbridgev2/src/main/resources/codegen-resources/waiters-2.json) | EventBusActive | DescribeEventBus | 2s | 60 |
 | [eventbridgev2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eventbridgev2/src/main/resources/codegen-resources/waiters-2.json) | EventBusDeleted | DescribeEventBus | 2s | 60 |
 | [gameliftstreams](https://github.com/aws/aws-sdk-java-v2/blob/master/services/gameliftstreams/src/main/resources/codegen-resources/waiters-2.json) | ApplicationDeleted | GetApplication | 2s | 60 |
@@ -223,6 +225,12 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [lambda](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambda/src/main/resources/codegen-resources/waiters-2.json) | FunctionUpdated | GetFunctionConfiguration | 5s | 60 |
 | [lambda](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambda/src/main/resources/codegen-resources/waiters-2.json) | FunctionUpdatedV2 | GetFunction | 1s | 300 |
 | [lambda](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambda/src/main/resources/codegen-resources/waiters-2.json) | PublishedVersionActive | GetFunctionConfiguration | 5s | 312 |
+| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionActive | GetWebFunction | 1s | 300 |
+| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionDeleted | GetWebFunction | 1s | 300 |
+| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionEndpointActive | GetWebFunctionEndpoint | 1s | 300 |
+| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionEndpointDeleted | GetWebFunctionEndpoint | 1s | 300 |
+| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionEndpointUpdated | GetWebFunctionEndpoint | 1s | 300 |
+| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionRevisionActive | GetWebFunctionRevision | 1s | 300 |
 | [lexmodelsv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lexmodelsv2/src/main/resources/codegen-resources/waiters-2.json) | BotAliasAvailable | DescribeBotAlias | 10s | 35 |
 | [lexmodelsv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lexmodelsv2/src/main/resources/codegen-resources/waiters-2.json) | BotAvailable | DescribeBot | 10s | 35 |
 | [lexmodelsv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lexmodelsv2/src/main/resources/codegen-resources/waiters-2.json) | BotExportCompleted | DescribeExport | 10s | 35 |
