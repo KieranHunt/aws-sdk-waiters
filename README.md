@@ -225,12 +225,6 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [lambda](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambda/src/main/resources/codegen-resources/waiters-2.json) | FunctionUpdated | GetFunctionConfiguration | 5s | 60 |
 | [lambda](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambda/src/main/resources/codegen-resources/waiters-2.json) | FunctionUpdatedV2 | GetFunction | 1s | 300 |
 | [lambda](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambda/src/main/resources/codegen-resources/waiters-2.json) | PublishedVersionActive | GetFunctionConfiguration | 5s | 312 |
-| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionActive | GetWebFunction | 1s | 300 |
-| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionDeleted | GetWebFunction | 1s | 300 |
-| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionEndpointActive | GetWebFunctionEndpoint | 1s | 300 |
-| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionEndpointDeleted | GetWebFunctionEndpoint | 1s | 300 |
-| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionEndpointUpdated | GetWebFunctionEndpoint | 1s | 300 |
-| [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionRevisionActive | GetWebFunctionRevision | 1s | 300 |
 | [lexmodelsv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lexmodelsv2/src/main/resources/codegen-resources/waiters-2.json) | BotAliasAvailable | DescribeBotAlias | 10s | 35 |
 | [lexmodelsv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lexmodelsv2/src/main/resources/codegen-resources/waiters-2.json) | BotAvailable | DescribeBot | 10s | 35 |
 | [lexmodelsv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lexmodelsv2/src/main/resources/codegen-resources/waiters-2.json) | BotExportCompleted | DescribeExport | 10s | 35 |
