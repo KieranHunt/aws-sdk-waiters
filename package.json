@@ -14,10 +14,11 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "bun check"
   },
   "devDependencies": {
-    "@types/node": "^25.9.3"
+    "@types/bun": "^1.4.3"
   },
   "dependencies": {
     "@joggr/tempo": "^0.13.4",
