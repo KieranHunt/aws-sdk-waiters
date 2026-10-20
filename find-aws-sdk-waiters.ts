@@ -85,6 +85,8 @@ const waiterRows: Array<{
   maxAttempts: string;
 }> = [];
 
+const failures: string[] = [];
+
 for (const waiterFile of waiterFiles) {
   const serviceName = extractServiceName(waiterFile);
   const githubUrl = createGitHubLink(waiterFile);
@@ -112,8 +114,16 @@ for (const waiterFile of waiterFiles) {
       });
     }
   } catch (err) {
-    console.error(`\nError processing ${serviceName}:`, err);
+    failures.push(`${serviceName}: ${err instanceof Error ? err.message : String(err)}`);
   }
+}
+
+if (failures.length > 0) {
+  console.error(`\n${failures.length} waiter file(s) failed:`);
+  for (const failure of failures) {
+    console.error(`  - ${failure}`);
+  }
+  process.exit(1);
 }
 
 waiterRows.sort((a, b) => {
