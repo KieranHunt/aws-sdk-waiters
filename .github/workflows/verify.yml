@@ -61,7 +61,8 @@ jobs:
         run: |
           set -euo pipefail
           marker="<!-- merge-job: verify-${VERIFY_RESULT}: ${HEAD_SHA} -->"
-          existing="$(gh pr view "$PR_NUMBER" --json comments --jq '.[].body')"
+          # gh pr view --json comments is broken in gh 2.97.0 ("expected an object but got: array")
+          existing="$(gh api "repos/${GH_REPO}/issues/${PR_NUMBER}/comments" --jq '.[].body')"
           if grep -qF -- "$marker" <<<"$existing"; then
             exit 0
           fi
@@ -82,7 +83,7 @@ jobs:
           fi
           echo "eligible=false" >> "$GITHUB_OUTPUT"
           marker="<!-- merge-job: ineligible-files: ${HEAD_SHA} -->"
-          existing="$(gh pr view "$PR_NUMBER" --json comments --jq '.[].body')"
+          existing="$(gh api "repos/${GH_REPO}/issues/${PR_NUMBER}/comments" --jq '.[].body')"
           # Hidden marker makes re-runs on the same head idempotent
           if grep -qF -- "$marker" <<<"$existing"; then
             exit 0
