@@ -33,3 +33,77 @@ jobs:
         env:
           PR_AUTHOR: ${{ github.event.pull_request.user.login }}
         run: scripts/verify-deps.sh HEAD^1
+
+  merge:
+    needs: verify
+    if: always() && github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    # Own group so a re-run never cancels an in-flight verify or merge
+    concurrency:
+      group: ${{ github.workflow }}-merge-${{ github.event.pull_request.number }}
+      cancel-in-progress: false
+
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+      HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+      VERIFY_RESULT: ${{ needs.verify.result }}
+
+    steps:
+      - name: Comment on failed verify
+        if: needs.verify.result != 'success'
+        run: |
+          set -euo pipefail
+          marker="<!-- merge-job: verify-${VERIFY_RESULT}: ${HEAD_SHA} -->"
+          existing="$(gh pr view "$PR_NUMBER" --json comments --jq '.[].body')"
+          if grep -qF -- "$marker" <<<"$existing"; then
+            exit 0
+          fi
+          body="Verify did not succeed (conclusion: ${VERIFY_RESULT}), so this Dependabot pull request will not auto-merge.
+          ${marker}"
+          gh pr comment "$PR_NUMBER" --body "$body"
+          gh pr edit "$PR_NUMBER" --add-assignee KieranHunt
+
+      - name: Reject ineligible changed files
+        id: files
+        run: |
+          set -euo pipefail
+          # grep -v exits 1 when nothing is left, which is the eligible case
+          offending="$(gh pr diff --name-only "$PR_NUMBER" | grep -vxE 'package\.json|bun\.lock' || true)"
+          if [ -z "$offending" ]; then
+            echo "eligible=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "eligible=false" >> "$GITHUB_OUTPUT"
+          marker="<!-- merge-job: ineligible-files: ${HEAD_SHA} -->"
+          existing="$(gh pr view "$PR_NUMBER" --json comments --jq '.[].body')"
+          # Hidden marker makes re-runs on the same head idempotent
+          if grep -qF -- "$marker" <<<"$existing"; then
+            exit 0
+          fi
+          files="$(printf '%s\n' "$offending" | sed "s/.*/\`&\`/" | tr '\n' ' ' | sed 's/ $//; s/ /, /g')"
+          body="This Dependabot pull request changes files outside package.json and bun.lock, so it will not auto-merge: ${files}.
+          ${marker}"
+          gh pr comment "$PR_NUMBER" --body "$body"
+          gh pr edit "$PR_NUMBER" --add-assignee KieranHunt
+
+      - name: Merge eligible Dependabot pull request
+        # --match-head-commit: only merge the head that verify ran on, never a later push
+        if: needs.verify.result == 'success' && steps.files.outputs.eligible == 'true'
+        run: |
+          set -euo pipefail
+          log="$(mktemp)"
+          if ! gh pr merge "$PR_NUMBER" --squash --delete-branch --match-head-commit "$HEAD_SHA" >"$log" 2>&1; then
+            # A moved head means a newer commit awaits verify; any other failure is doubt
+            if grep -q 'does not match' "$log"; then
+              exit 0
+            fi
+            cat "$log" >&2
+            exit 1
+          fi
