@@ -71,14 +71,16 @@ jobs:
           gh pr edit "$PR_NUMBER" --add-assignee KieranHunt
 
       - name: Reject ineligible changed files
+        id: files
         run: |
           set -euo pipefail
           # grep -v exits 1 when nothing is left, which is the eligible case
           offending="$(gh pr diff --name-only "$PR_NUMBER" | grep -vxE 'package\.json|bun\.lock' || true)"
           if [ -z "$offending" ]; then
-            echo "Eligible and green; merge path lands in the next slice"
+            echo "eligible=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          echo "eligible=false" >> "$GITHUB_OUTPUT"
           marker="<!-- merge-job: ineligible-files: ${HEAD_SHA} -->"
           existing="$(gh pr view "$PR_NUMBER" --json comments --jq '.[].body')"
           # Hidden marker makes re-runs on the same head idempotent
@@ -90,3 +92,18 @@ jobs:
           ${marker}"
           gh pr comment "$PR_NUMBER" --body "$body"
           gh pr edit "$PR_NUMBER" --add-assignee KieranHunt
+
+      - name: Merge eligible Dependabot pull request
+        # --match-head-commit: only merge the head that verify ran on, never a later push
+        if: needs.verify.result == 'success' && steps.files.outputs.eligible == 'true'
+        run: |
+          set -euo pipefail
+          log="$(mktemp)"
+          if ! gh pr merge "$PR_NUMBER" --squash --delete-branch --match-head-commit "$HEAD_SHA" >"$log" 2>&1; then
+            # A moved head means a newer commit awaits verify; any other failure is doubt
+            if grep -q 'does not match' "$log"; then
+              exit 0
+            fi
+            cat "$log" >&2
+            exit 1
+          fi
