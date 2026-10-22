@@ -292,6 +292,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [neptunegraph](https://github.com/aws/aws-sdk-java-v2/blob/master/services/neptunegraph/src/main/resources/codegen-resources/waiters-2.json) | ImportTaskSuccessful | GetImportTask | 60s | 480 |
 | [neptunegraph](https://github.com/aws/aws-sdk-java-v2/blob/master/services/neptunegraph/src/main/resources/codegen-resources/waiters-2.json) | PrivateGraphEndpointAvailable | GetPrivateGraphEndpoint | 10s | 180 |
 | [neptunegraph](https://github.com/aws/aws-sdk-java-v2/blob/master/services/neptunegraph/src/main/resources/codegen-resources/waiters-2.json) | PrivateGraphEndpointDeleted | GetPrivateGraphEndpoint | 10s | 180 |
+| [networkfirewall](https://github.com/aws/aws-sdk-java-v2/blob/master/services/networkfirewall/src/main/resources/codegen-resources/waiters-2.json) | FirewallPolicyActive | DescribeFirewallPolicy | 15s | 40 |
 | [omics](https://github.com/aws/aws-sdk-java-v2/blob/master/services/omics/src/main/resources/codegen-resources/waiters-2.json) | AnnotationImportJobCreated | GetAnnotationImportJob | 30s | 20 |
 | [omics](https://github.com/aws/aws-sdk-java-v2/blob/master/services/omics/src/main/resources/codegen-resources/waiters-2.json) | AnnotationStoreCreated | GetAnnotationStore | 30s | 20 |
 | [omics](https://github.com/aws/aws-sdk-java-v2/blob/master/services/omics/src/main/resources/codegen-resources/waiters-2.json) | AnnotationStoreDeleted | GetAnnotationStore | 30s | 20 |
