@@ -61,6 +61,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [codedeploy](https://github.com/aws/aws-sdk-java-v2/blob/master/services/codedeploy/src/main/resources/codegen-resources/waiters-2.json) | DeploymentSuccessful | GetDeployment | 15s | 120 |
 | [codegurureviewer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/codegurureviewer/src/main/resources/codegen-resources/waiters-2.json) | CodeReviewCompleted | DescribeCodeReview | 10s | 180 |
 | [codegurureviewer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/codegurureviewer/src/main/resources/codegen-resources/waiters-2.json) | RepositoryAssociationSucceeded | DescribeRepositoryAssociation | 10s | 30 |
+| [continuum](https://github.com/aws/aws-sdk-java-v2/blob/master/services/continuum/src/main/resources/codegen-resources/waiters-2.json) | CodeScanSucceeded | GetCodeScan | 60s | 480 |
 | [databasemigration](https://github.com/aws/aws-sdk-java-v2/blob/master/services/databasemigration/src/main/resources/codegen-resources/waiters-2.json) | EndpointDeleted | DescribeEndpoints | 5s | 60 |
 | [databasemigration](https://github.com/aws/aws-sdk-java-v2/blob/master/services/databasemigration/src/main/resources/codegen-resources/waiters-2.json) | ExtensionPackAssociated | DescribeExtensionPackAssociations | 10s | 60 |
 | [databasemigration](https://github.com/aws/aws-sdk-java-v2/blob/master/services/databasemigration/src/main/resources/codegen-resources/waiters-2.json) | MetadataModelAssessed | DescribeMetadataModelAssessments | 30s | 360 |
