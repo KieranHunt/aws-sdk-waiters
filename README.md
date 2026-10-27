@@ -246,6 +246,10 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [machinelearning](https://github.com/aws/aws-sdk-java-v2/blob/master/services/machinelearning/src/main/resources/codegen-resources/waiters-2.json) | EvaluationAvailable | DescribeEvaluations | 30s | 60 |
 | [machinelearning](https://github.com/aws/aws-sdk-java-v2/blob/master/services/machinelearning/src/main/resources/codegen-resources/waiters-2.json) | MLModelAvailable | DescribeMLModels | 30s | 60 |
 | [macie2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/macie2/src/main/resources/codegen-resources/waiters-2.json) | FindingRevealed | GetSensitiveDataOccurrences | 2s | 60 |
+| [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | DestinationEndpointConnected | GetDestinationEndpoint | 3s | 40 |
+| [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | DestinationEndpointDeregistered | GetDestinationEndpoint | 3s | 40 |
+| [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | DestinationEndpointDisconnected | GetDestinationEndpoint | 3s | 40 |
+| [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | DestinationEndpointRegistered | GetDestinationEndpoint | 3s | 40 |
 | [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | FlowActive | DescribeFlow | 3s | 40 |
 | [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | FlowDeleted | DescribeFlow | 3s | 40 |
 | [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | FlowStandby | DescribeFlow | 3s | 40 |
@@ -257,6 +261,12 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | OutputRouted | GetRouterOutput | 3s | 40 |
 | [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | OutputStandby | GetRouterOutput | 3s | 40 |
 | [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | OutputUnrouted | GetRouterOutput | 3s | 40 |
+| [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | SourceEndpointConnected | GetSourceEndpoint | 3s | 40 |
+| [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | SourceEndpointConnecting | GetSourceEndpoint | 3s | 40 |
+| [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | SourceEndpointDeregistered | GetSourceEndpoint | 3s | 40 |
+| [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | SourceEndpointDisconnected | GetSourceEndpoint | 3s | 40 |
+| [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | SourceEndpointDisconnecting | GetSourceEndpoint | 3s | 40 |
+| [mediaconnect](https://github.com/aws/aws-sdk-java-v2/blob/master/services/mediaconnect/src/main/resources/codegen-resources/waiters-2.json) | SourceEndpointRegistered | GetSourceEndpoint | 3s | 40 |
 | [medialive](https://github.com/aws/aws-sdk-java-v2/blob/master/services/medialive/src/main/resources/codegen-resources/waiters-2.json) | ChannelCreated | DescribeChannel | 3s | 5 |
 | [medialive](https://github.com/aws/aws-sdk-java-v2/blob/master/services/medialive/src/main/resources/codegen-resources/waiters-2.json) | ChannelDeleted | DescribeChannel | 5s | 84 |
 | [medialive](https://github.com/aws/aws-sdk-java-v2/blob/master/services/medialive/src/main/resources/codegen-resources/waiters-2.json) | ChannelPlacementGroupAssigned | DescribeChannelPlacementGroup | 3s | 5 |
