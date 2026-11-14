@@ -207,6 +207,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [iam](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iam/src/main/resources/codegen-resources/waiters-2.json) | PolicyExists | GetPolicy | 1s | 20 |
 | [iam](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iam/src/main/resources/codegen-resources/waiters-2.json) | RoleExists | GetRole | 1s | 20 |
 | [iam](https://github.com/aws/aws-sdk-java-v2/blob/master/services/iam/src/main/resources/codegen-resources/waiters-2.json) | UserExists | GetUser | 1s | 20 |
+| [imagebuilder](https://github.com/aws/aws-sdk-java-v2/blob/master/services/imagebuilder/src/main/resources/codegen-resources/waiters-2.json) | ImageAvailable | GetImage | 60s | 360 |
 | [inspector2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/inspector2/src/main/resources/codegen-resources/waiters-2.json) | ConnectorConnected | ListConnectors | 30s | 5 |
 | [inspector2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/inspector2/src/main/resources/codegen-resources/waiters-2.json) | ConnectorDeleted | ListConnectors | 30s | 5 |
 | [inspector2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/inspector2/src/main/resources/codegen-resources/waiters-2.json) | ConnectorEnabled | ListConnectors | 30s | 5 |
@@ -227,6 +228,8 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [lambda](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambda/src/main/resources/codegen-resources/waiters-2.json) | FunctionUpdated | GetFunctionConfiguration | 5s | 60 |
 | [lambda](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambda/src/main/resources/codegen-resources/waiters-2.json) | FunctionUpdatedV2 | GetFunction | 1s | 300 |
 | [lambda](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambda/src/main/resources/codegen-resources/waiters-2.json) | PublishedVersionActive | GetFunctionConfiguration | 5s | 312 |
+| [lambdacore](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdacore/src/main/resources/codegen-resources/waiters-2.json) | RuntimeAliasActive | GetRuntimeAlias | 2s | 60 |
+| [lambdacore](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdacore/src/main/resources/codegen-resources/waiters-2.json) | RuntimeVersionActive | GetRuntimeVersion | 2s | 60 |
 | [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionActive | GetWebFunction | 1s | 300 |
 | [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionDeleted | GetWebFunction | 1s | 300 |
 | [lambdaweb](https://github.com/aws/aws-sdk-java-v2/blob/master/services/lambdaweb/src/main/resources/codegen-resources/waiters-2.json) | WebFunctionEndpointActive | GetWebFunctionEndpoint | 1s | 300 |
