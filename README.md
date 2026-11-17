@@ -326,6 +326,8 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [omics](https://github.com/aws/aws-sdk-java-v2/blob/master/services/omics/src/main/resources/codegen-resources/waiters-2.json) | VariantStoreDeleted | GetVariantStore | 30s | 20 |
 | [omics](https://github.com/aws/aws-sdk-java-v2/blob/master/services/omics/src/main/resources/codegen-resources/waiters-2.json) | WorkflowActive | GetWorkflow | 3s | 10 |
 | [omics](https://github.com/aws/aws-sdk-java-v2/blob/master/services/omics/src/main/resources/codegen-resources/waiters-2.json) | WorkflowVersionActive | GetWorkflowVersion | 3s | 10 |
+| [opensearchmemory](https://github.com/aws/aws-sdk-java-v2/blob/master/services/opensearchmemory/src/main/resources/codegen-resources/waiters-2.json) | SpaceActive | GetSpace | 10s | 60 |
+| [opensearchmemory](https://github.com/aws/aws-sdk-java-v2/blob/master/services/opensearchmemory/src/main/resources/codegen-resources/waiters-2.json) | SpaceDeleted | GetSpace | 10s | 60 |
 | [proton](https://github.com/aws/aws-sdk-java-v2/blob/master/services/proton/src/main/resources/codegen-resources/waiters-2.json) | ComponentDeleted | GetComponent | 5s | 999 |
 | [proton](https://github.com/aws/aws-sdk-java-v2/blob/master/services/proton/src/main/resources/codegen-resources/waiters-2.json) | ComponentDeployed | GetComponent | 5s | 999 |
 | [proton](https://github.com/aws/aws-sdk-java-v2/blob/master/services/proton/src/main/resources/codegen-resources/waiters-2.json) | EnvironmentDeployed | GetEnvironment | 5s | 999 |
@@ -415,3 +417,4 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [transcribe](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transcribe/src/main/resources/codegen-resources/waiters-2.json) | VocabularyReady | GetVocabulary | 10s | 180 |
 | [transfer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transfer/src/main/resources/codegen-resources/waiters-2.json) | ServerOffline | DescribeServer | 30s | 120 |
 | [transfer](https://github.com/aws/aws-sdk-java-v2/blob/master/services/transfer/src/main/resources/codegen-resources/waiters-2.json) | ServerOnline | DescribeServer | 30s | 120 |
+| [wellarchitected](https://github.com/aws/aws-sdk-java-v2/blob/master/services/wellarchitected/src/main/resources/codegen-resources/waiters-2.json) | AgentOrganizationalReportCompleted | GetAgentOrganizationalReport | 15s | 40 |
