@@ -190,6 +190,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [endusermessaging](https://github.com/aws/aws-sdk-java-v2/blob/master/services/endusermessaging/src/main/resources/codegen-resources/waiters-2.json) | JobSuccess | GetJob | 30s | 5 |
 | [eventbridgev2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eventbridgev2/src/main/resources/codegen-resources/waiters-2.json) | EventBusActive | DescribeEventBus | 2s | 60 |
 | [eventbridgev2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eventbridgev2/src/main/resources/codegen-resources/waiters-2.json) | EventBusDeleted | DescribeEventBus | 2s | 60 |
+| [eventbridgev2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/eventbridgev2/src/main/resources/codegen-resources/waiters-2.json) | MskSubscriberActive | DescribeSubscriber | 2s | 150 |
 | [gameliftstreams](https://github.com/aws/aws-sdk-java-v2/blob/master/services/gameliftstreams/src/main/resources/codegen-resources/waiters-2.json) | ApplicationDeleted | GetApplication | 2s | 60 |
 | [gameliftstreams](https://github.com/aws/aws-sdk-java-v2/blob/master/services/gameliftstreams/src/main/resources/codegen-resources/waiters-2.json) | ApplicationReady | GetApplication | 2s | 60 |
 | [gameliftstreams](https://github.com/aws/aws-sdk-java-v2/blob/master/services/gameliftstreams/src/main/resources/codegen-resources/waiters-2.json) | StreamGroupActive | GetStreamGroup | 30s | 120 |
@@ -329,6 +330,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [omics](https://github.com/aws/aws-sdk-java-v2/blob/master/services/omics/src/main/resources/codegen-resources/waiters-2.json) | WorkflowVersionActive | GetWorkflowVersion | 3s | 10 |
 | [opensearchmemory](https://github.com/aws/aws-sdk-java-v2/blob/master/services/opensearchmemory/src/main/resources/codegen-resources/waiters-2.json) | SpaceActive | GetSpace | 10s | 60 |
 | [opensearchmemory](https://github.com/aws/aws-sdk-java-v2/blob/master/services/opensearchmemory/src/main/resources/codegen-resources/waiters-2.json) | SpaceDeleted | GetSpace | 10s | 60 |
+| [polly](https://github.com/aws/aws-sdk-java-v2/blob/master/services/polly/src/main/resources/codegen-resources/waiters-2.json) | VoiceActive | GetVoice | 15s | 480 |
 | [proton](https://github.com/aws/aws-sdk-java-v2/blob/master/services/proton/src/main/resources/codegen-resources/waiters-2.json) | ComponentDeleted | GetComponent | 5s | 999 |
 | [proton](https://github.com/aws/aws-sdk-java-v2/blob/master/services/proton/src/main/resources/codegen-resources/waiters-2.json) | ComponentDeployed | GetComponent | 5s | 999 |
 | [proton](https://github.com/aws/aws-sdk-java-v2/blob/master/services/proton/src/main/resources/codegen-resources/waiters-2.json) | EnvironmentDeployed | GetEnvironment | 5s | 999 |
@@ -363,6 +365,8 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [resiliencehubv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/resiliencehubv2/src/main/resources/codegen-resources/waiters-2.json) | ReportSucceeded | ListReports | 30s | 5 |
 | [resiliencehubv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/resiliencehubv2/src/main/resources/codegen-resources/waiters-2.json) | ServiceAssessmentCompleted | GetService | 30s | 5 |
 | [resiliencehubv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/resiliencehubv2/src/main/resources/codegen-resources/waiters-2.json) | ServiceResourceDiscoveryCompleted | GetService | 30s | 5 |
+| [route53](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53/src/main/resources/codegen-resources/waiters-2.json) | HealthCheckSourceCreated | GetHealthCheckSource | 15s | 40 |
+| [route53](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53/src/main/resources/codegen-resources/waiters-2.json) | HealthCheckSourceDeleted | GetHealthCheckSource | 15s | 40 |
 | [route53](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53/src/main/resources/codegen-resources/waiters-2.json) | ResourceRecordSetsChanged | GetChange | 30s | 60 |
 | [route53recoverycontrolconfig](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53recoverycontrolconfig/src/main/resources/codegen-resources/waiters-2.json) | ClusterCreated | DescribeCluster | 5s | 26 |
 | [route53recoverycontrolconfig](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53recoverycontrolconfig/src/main/resources/codegen-resources/waiters-2.json) | ClusterDeleted | DescribeCluster | 5s | 26 |
