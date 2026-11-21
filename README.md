@@ -365,7 +365,7 @@ For more, see [Every AWS SDK Waiter](https://kieran.casa/every-waiter/) on my bl
 | [resiliencehubv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/resiliencehubv2/src/main/resources/codegen-resources/waiters-2.json) | ReportSucceeded | ListReports | 30s | 5 |
 | [resiliencehubv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/resiliencehubv2/src/main/resources/codegen-resources/waiters-2.json) | ServiceAssessmentCompleted | GetService | 30s | 5 |
 | [resiliencehubv2](https://github.com/aws/aws-sdk-java-v2/blob/master/services/resiliencehubv2/src/main/resources/codegen-resources/waiters-2.json) | ServiceResourceDiscoveryCompleted | GetService | 30s | 5 |
-| [route53](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53/src/main/resources/codegen-resources/waiters-2.json) | HealthCheckSourceCreated | GetHealthCheckSource | 15s | 40 |
+| [route53](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53/src/main/resources/codegen-resources/waiters-2.json) | HealthCheckSourceCreated | GetHealthCheckSource | 15s | 100 |
 | [route53](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53/src/main/resources/codegen-resources/waiters-2.json) | HealthCheckSourceDeleted | GetHealthCheckSource | 15s | 40 |
 | [route53](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53/src/main/resources/codegen-resources/waiters-2.json) | ResourceRecordSetsChanged | GetChange | 30s | 60 |
 | [route53recoverycontrolconfig](https://github.com/aws/aws-sdk-java-v2/blob/master/services/route53recoverycontrolconfig/src/main/resources/codegen-resources/waiters-2.json) | ClusterCreated | DescribeCluster | 5s | 26 |
